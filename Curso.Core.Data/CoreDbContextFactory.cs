@@ -11,7 +11,7 @@ namespace Curso.Core.Data
         public CoreDbContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<CoreDbContext>();
-            var service = ConfigureSettings.GetService(ConfigureSettings.SecaVoceService);
+            var service = ConfigureSettings.GetService(ConfigureSettings.CursoService);
 
             if (service.Repository.Provider == "SqlServer")
                 optionsBuilder.UseSqlServer(service.Repository.ConnectionString);
