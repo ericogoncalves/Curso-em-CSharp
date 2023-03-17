@@ -103,7 +103,7 @@ namespace Curso.Core.Api
             });
 
             // database..
-            var databaseService = ConfigureSettings.GetService(ConfigureSettings.SecaVoceService);
+            var databaseService = ConfigureSettings.GetService(ConfigureSettings.CursoService);
             switch (databaseService.Repository.Provider)
             {
                 case "SqlServer":
