@@ -14,7 +14,7 @@ namespace Curso.Core.Configuration
 
     public class ConfigureSettings
     {
-        public const string SecaVoceService = "Curso.Core";
+        public const string CursoService = "Curso.Core";
         public const string AuthService = "Auth";
         public const string TaklkService = "Talk";
         private static string GetFileName()
