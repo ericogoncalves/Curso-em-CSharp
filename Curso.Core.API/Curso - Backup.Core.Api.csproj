@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\AddressController.cs" />
+    <Compile Remove="Controllers\BankingDetailsController.cs" />
+    <Compile Remove="Controllers\ConfigurationController.cs" />
+    <Compile Remove="Controllers\ContactController.cs" />
+    <Compile Remove="Controllers\DocumentController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+	<PackageReference Include="DevSnap.CommonLibrary" Version="1.0.0" />
+	<PackageReference Include="MediatR" Version="9.0.0" />
+	<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+	<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.2" />
+	<PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.2" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.2">
+	  <PrivateAssets>all</PrivateAssets>
+	  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	</PackageReference>
+	<PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="App_Data\Files\" />
+    <Folder Include="Logs\" /><ProjectReference Include="..\Curso.Core.Configuration\CursoCurso.Core.Configuration.csproj" />
+    <ProjectReference Include="..\Curso.Core.Model\CursoCurso.Core.Model.csproj" />
+    <ProjectReference Include="..\Curso.Core.Service\CursoCurso.Core.Service.csproj" />
+    <ProjectReference Include="..\Curso.Core.Configuration\Curso.Core.Configuration.csproj" />
+    <ProjectReference Include="..\Curso.Core.Data\Curso.Core.Data.csproj" />
+    <ProjectReference Include="..\Curso.Core.Service\Curso.Core.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Curso.Core.Service\Curso.Core.Service.csproj" />
+  </ItemGroup>
+
+</Project>

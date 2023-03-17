@@ -1,0 +1,55 @@
+{
+  "Jwt": {
+    "Key": "kep2EpHUvA_eJAKaS$&G3-?E=#Efa5AX",
+    "Issuer": "http://curso.ai",
+    "Audience": "https://api-act.mybluemix.net"
+  },
+
+  "EmailConfiguration": {
+    "Sender": "app@curso.me",
+    "Password": "",
+    "Login": "curso@2019",
+    "Host": "smtp.sendgrid.net",
+    "ApiKey": "",
+    "NoReply": "noreply@curso.me"
+  },
+
+  "fileDataSettings": {
+    "comment": "0-Local / 1-AWS / 2-Azure / 3-GCP",
+    "storageBucket": "App_Data\\Files",
+    "fileDataStorage": 0,
+    "awsProfileName": null,
+    "awsAccessKey": null,
+    "awsSecretKey": null,
+    "azureAccessKey": null,
+    "googleCredentialFile": null
+  },
+  "smtpData": {
+    "serviceName": null,
+    "serviceHost": null,
+    "servicePort": 0,
+    "serviceProtocol": null,
+    "serviceUser": null,
+    "servicePassword": null,
+    "serviceDefaultSender": null
+  },
+  "services": [
+    {
+      "serviceName": "Curso.Core",
+      "serviceUri": null,
+      "repository": {
+        "provider": "SqlServer",
+        "connectionString": "Server=;Initial Catalog=;Persist Security Info=False;User ID=;Password=;MultipleActiveResultSets=True;Encrypt=False;TrustServerCertificate=False;Connection Timeout=720;"
+      }
+    },
+    {
+      "serviceName": "Auth",
+      "serviceUri": ""
+    },
+    {
+      "serviceName": "Talk",
+      "serviceUri": ""
+    }
+  ],
+  "NewPasswordLink": "link"
+}
