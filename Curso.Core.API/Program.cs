@@ -26,7 +26,7 @@ namespace Curso.Core.Api
                     webBuilder.UseStartup<Startup>();
 #endif
 #if RELEASE
-					webBuilder.UseStartup<Startup>().UseKestrel(x => x.ListenAnyIP(7003));
+					webBuilder.UseStartup<Startup>().UseKestrel(x => x.ListenAnyIP());
 #endif
                 });
     }
