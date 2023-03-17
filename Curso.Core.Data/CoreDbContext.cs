@@ -14,7 +14,7 @@ namespace Curso.Core.Data
         public CoreDbContext(DbContextOptions<CoreDbContext> options) : base(options) { }
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            var service = ConfigureSettings.GetService(ConfigureSettings.SecaVoceService);
+            var service = ConfigureSettings.GetService(ConfigureSettings.CursoService);
             if (service.Repository.Provider == "SqlServer")
                 options.UseSqlServer(service.Repository.ConnectionString);
             else
